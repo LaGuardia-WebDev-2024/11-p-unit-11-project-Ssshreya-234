@@ -21,33 +21,44 @@ Select ONE Additional
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <button id="mem1-button">Memory #1</button>
-    <button id="mem2-button">Memory #2</button>
-    <button id="mem3-button">Memory #3</button>
-    <h1>My Top 3 Memories of <span>This Year</span></h1>
+    <button id="mem1-button">thing #1</button>
+    <button id="mem2-button">thing #2</button>
+    <button id="mem3-button">thing #3</button>
+    <h1>My Top 3 movies<span></span></h1>
     <ol>
       <li>
-        <h3 id="mem1">Memory #1</h3>
+        <h3 id="mem1"> Movie 1</h3>
+        <p>
+        <img class = "Movie1" src = "https://images.moviesanywhere.com/149bb97037332145ca92db93c73c4264/a594d3e9-e2ab-4338-abfc-f34076468897.jpg"
+        width="210">
+        <p class = "Movietext1" > Amazing movie. The casting is perfect. The characters are perfect. "Dont call me dont come by my house" is so iconic. Just overall a great movie.   </p>
+        
+      
+      </li>
+
+      <li>
+        <h3 id="mem2">Movie 2</h3>
+        <img class = "Movie2" src = 
         <p>More about this memory.</p>
       </li>
 
       <li>
-        <h3 id="mem2">Memory #2</h3>
-        <p>More about this memory.</p>
-      </li>
-
-      <li>
-        <h3 id="mem3">Memory #3</h3>
+        <h3 id="mem3">Movie 3</h3>
         <p>More about this memory</p>
       </li>
     </ol>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
-
+      $(".Movie1").hide();
+      $(".Movietext1").hide();
       // ======================== Button #1
       $("#mem1-button").click(function () {
-        $("#mem1").css("color", "purple");
+        $("#mem1").css("color", "purple").text("Diary of a wimpy kid 1");
+        $(".Movie1").show(210)
+        $(".Movietext1").show()
+
+
       });
 
       // ======================== Button #2
