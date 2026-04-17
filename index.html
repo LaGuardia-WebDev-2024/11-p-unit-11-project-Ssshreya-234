@@ -38,13 +38,16 @@ Select ONE Additional
 
       <li>
         <h3 id="mem2">Movie 2</h3>
-        <img class = "Movie2" src = 
-        <p>More about this memory.</p>
+        <img class = "Movie2" src = "https://m.media-amazon.com/images/I/71dHT97azfL._AC_UF894,1000_QL80_.jpg" 
+        width="210">
+        <p class = "Movietext2" > Literally my favorite movie. Its so nastolgic and perfect. I used to watch this movie like every weekend with my sister so I've like pretty much memorized every scene. 10/10 movie.  </p>
       </li>
 
       <li>
         <h3 id="mem3">Movie 3</h3>
-        <p>More about this memory</p>
+        <img class = "Movie3" src = "https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/7a90b91c-d401-494c-b95c-cd960fdbc18c/compose?aspectRatio=1.78&format=webp&width=1200"
+        width="210">
+        <p class = "Movietext3"> Such a cutesy summer movie. Rodricks perfomace of baby at the end of the movie is just amazing.   </p>
       </li>
     </ol>
 
@@ -52,6 +55,10 @@ Select ONE Additional
     <script>
       $(".Movie1").hide();
       $(".Movietext1").hide();
+      $(".Movie2").hide();
+      $(".Movietext2").hide();
+      $(".Movie3").hide();
+      $(".Movietext3").hide();
       // ======================== Button #1
       $("#mem1-button").click(function () {
         $("#mem1").css("color", "purple").text("Diary of a wimpy kid 1");
@@ -63,13 +70,18 @@ Select ONE Additional
 
       // ======================== Button #2
       $("#mem2-button").click(function () {
-        $("#mem2").css("color", "blue");
+        $("#mem2").css("color", "blue").text("Diary of a wimpy kid 2");
+        $(".Movie2").show(210)
+        $(".Movietext2").show()
+
       });
 
       // ======================== Button #3
       $("#mem3-button").click(function () {
         $("#mem3").css("color", "green");
-        $("#mem3").text("Coding Parties! 🎉");
+        $("#mem3").text("Diary of a Wimpy kid 3");
+        $(".Movie3").show(210)
+        $(".Movietext3").show()
       });
 
 
