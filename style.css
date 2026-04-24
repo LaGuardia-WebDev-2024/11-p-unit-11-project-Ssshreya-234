@@ -10,3 +10,16 @@ html {
 h1 {
   font-family: "Poetsen One", sans-serif;
 }
+
+body {
+ background-color: rgba(124, 21, 220, 0.295);
+  text-align: center;
+
+}
+ p{
+  font-style: oblique;
+ }
+
+head{
+  text-decoration-style: dotted;
+}
